@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Arithmetic Calculator</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>  <!--button codes-->
+        <h2>Simple Arithmetic Calculator</h2>
+        <input type="number" placeholder="Number 1" id="num1"/>
+        <br>
+        <input type="number" placeholder="Number 2" id="num2"/>
+        <br>
+        <button onclick="addNumbers()">+</button>
+        <button onclick="subtractNumbers()">-</button>
+        <button onclick="multiplyNumbers()">x</button>
+        <button onclick="divideNumbers()">/</button>
+        <input type="number" id="result" readonly/>
+    </div>
+    <script>
+     //codes for the solving//
+        function addNumbers() {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = n1 + n2;
+        }
+        function subtractNumbers() {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = n1 - n2;
+        }
+        function multiplyNumbers() {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = n1 * n2;
+        }
+        function divideNumbers() {
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("result").value = n1 / n2;
+        }
+    </script>
+</body>
+</html>
